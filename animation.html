@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        h1{
+
+            color: #d21b1b;
+            background-color: aqua;
+            text-align: center;
+        }
+        div{
+
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            border: 2px;
+            border-radius: 50%;
+            animation-name: moveRight;
+            animation-duration: 6s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function:ease;
+
+        
+        }
+        @keyframes moveRight {
+            from{
+                transform: translate(1px);
+            }
+            to{
+                transform: translate(200px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1> css Animation proprty </h1>
+    <div></div>
+</body>
+</html>
